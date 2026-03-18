@@ -1,2 +1,2 @@
 
-select count(*) from practice.test.employee
+select current_database()
