@@ -1,2 +1,2 @@
 select * from test.emp
-where sal<1000
+where sal<2000
