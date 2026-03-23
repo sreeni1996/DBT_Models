@@ -1,3 +1,2 @@
-select * from test.employee
-where salary>75000
-and len(name)>=13
+select * from test.emp
+where sal<1000
