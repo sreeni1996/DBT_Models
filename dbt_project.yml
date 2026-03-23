@@ -43,6 +43,7 @@ models:
 
     payroll_models:
       +materialized: table
+      +transient: false
 
     Payroll_RAW:
       +materialized: table
