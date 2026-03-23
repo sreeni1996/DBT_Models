@@ -1,3 +1,3 @@
 select *
 from test.emp
-where deptno = 20
+where deptno = 10
