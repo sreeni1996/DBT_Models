@@ -1,4 +1,4 @@
 
 select empno,ename,deptno
 from test.emp
-where deptno = 10
+where deptno = 20
