@@ -1,0 +1,13 @@
+planid,plan_name,plant_type,duration
+P001,Basic Talk 99,Prepaid,28 days
+P002,Unlimited Combo 199,Prepaid,30 days
+P003,Data Booster 49,Add-on,1 day
+P004,Family Pack 599,Postpaid,Monthly
+P005,Premium Max 999,Postpaid,Monthly
+P006,Night Data Pack 29,Add-on,1 day
+P007,Student Special 149,Prepaid,28 days
+P008,Work From Home 399,Prepaid,56 days
+P009,International Roam,Add-on,7 days
+P010,Unlimited Yearly,Prepaid,365 days
+P011,Business Pro 1299,Postpaid,Monthly
+P012,OTT Combo 499,Prepaid,84 days
