@@ -1,0 +1,13 @@
+sources:
+  - name: raw_catalog
+    database: PRACTICE
+    schema: payroll_raw
+    tables:
+      - name: emp
+      - name: employees
+      - name: departments
+      - name: salary
+      - name: locations
+
+
+

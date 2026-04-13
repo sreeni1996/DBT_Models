@@ -1,9 +1,9 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
 
-select empno,ename,deptno
-from test.emp
-where deptno = 10
+select emp_id,
+emp_name,
+designation,
+case when manager_id is null then 'YES' 
+else 'NO' 
+end as is_manager
+from {{ source('raw_catalog', 'employees') }}
+
