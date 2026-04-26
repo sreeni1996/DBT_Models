@@ -1,0 +1,2 @@
+select * 
+from PRACTICE.PAYROLL_RAW.LOCATION
