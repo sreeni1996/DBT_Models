@@ -8,3 +8,4 @@ c.country
 from {{ ref('employee') }} a
 inner join {{ ref('department') }} b on a.dept_id = b.dept_id
 inner join {{ ref('locations') }} c on b.loc_id = c.loc_id
+inner join {{ source('dbt_stg_schem', 'designations') }} d on b.dept_id = d.dept_id

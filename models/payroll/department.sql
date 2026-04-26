@@ -1,2 +1,2 @@
 select * 
-from PRACTICE.PAYROLL_RAW.DEPARTMENT
+from {{ source('payroll_raw_layer', 'department') }}

@@ -1,0 +1,14 @@
+sources:
+  - name: payroll_raw_layer
+    database: practice
+    schema: payroll_raw
+    tables:
+      - name: employee
+      - name: department
+      - name: location
+  - name: dbt_stg_schem
+    database: practice
+    schema: dbt_sb
+    tables:
+      - name: designations
+

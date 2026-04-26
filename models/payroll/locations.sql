@@ -1,2 +1,2 @@
 select * 
-from PRACTICE.PAYROLL_RAW.LOCATION
+from {{ source('payroll_raw_layer', 'location') }}
