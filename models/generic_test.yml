@@ -13,4 +13,5 @@ models:
       - name: dept_id
         tests:
           - accepted_values:
-              values: [10, 20, 30, 40]
+              arguments:
+                values: [10, 20, 30, 40]
