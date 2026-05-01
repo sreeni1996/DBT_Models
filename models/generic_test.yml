@@ -1,0 +1,12 @@
+models:
+  - name: employee_raw
+    columns:
+      - name: salary
+        tests:
+        - not_null
+      - name: emp_id
+        tests:
+        - not_null
+        - unique
+        
+          
