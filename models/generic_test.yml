@@ -8,5 +8,9 @@ models:
         tests:
         - not_null
         - unique
+      - name: dept_id
+        tests:
+          - accepted_values:
+              values: [10,20,30,40]
         
           
