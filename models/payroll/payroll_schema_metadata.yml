@@ -6,4 +6,4 @@ sources:
       - name: employee
       - name: department
       - name: location
-      - name: department
+      - name: designation
