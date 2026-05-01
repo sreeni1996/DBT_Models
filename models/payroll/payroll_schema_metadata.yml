@@ -1,0 +1,9 @@
+sources:
+  - name: payroll_raw
+    database: practice
+    schema: payroll_raw
+    tables:
+      - name: employee
+      - name: department
+      - name: location
+      - name: department
