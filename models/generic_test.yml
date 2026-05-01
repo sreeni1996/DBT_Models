@@ -3,14 +3,14 @@ models:
     columns:
       - name: salary
         tests:
-        - not_null
+          - not_null
+
       - name: emp_id
         tests:
-        - not_null
-        - unique
+          - not_null
+          - unique
+
       - name: dept_id
         tests:
           - accepted_values:
-              values: [10,20,30,40]
-        
-          
+              values: [10, 20, 30, 40]
