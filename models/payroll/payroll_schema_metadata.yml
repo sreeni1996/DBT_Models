@@ -1,5 +1,5 @@
 sources:
-  - name: payroll_raw
+  - name: payroll
     database: practice
     schema: payroll_raw
     tables:
