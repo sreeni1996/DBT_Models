@@ -1,9 +1,0 @@
-sources:
-  - name: payroll_raw_layer
-    database: practice
-    schema: payroll_raw
-    tables:
-      - name: employee
-      - name: department
-      - name: location
-  

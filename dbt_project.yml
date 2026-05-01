@@ -37,3 +37,4 @@ models:
       +transient: true
     payroll:
       +materialized: table
+      +transient: true
