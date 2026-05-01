@@ -6,7 +6,7 @@ sources:
       - name: employee
       - name: department
       - name: location
-  - name: dbt_stg_schem
+  - name: dbt_stg_schema
     database: practice
     schema: dbt_sb
     tables:

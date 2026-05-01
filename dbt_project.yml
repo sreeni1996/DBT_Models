@@ -35,6 +35,5 @@ models:
     example:
       +materialized: table
       +transient: true
-    stage:
+    payroll:
       +materialized: table
-      +transient: true
