@@ -4,6 +4,15 @@ sources:
     schema: payroll_raw
     tables:
       - name: employee
+        columns:
+          - name: emp_id
+            tests:
+            - not_null
+            - unique
       - name: department
+        columns:
+          - name: dept_id
+            tests:
+            - not_null
       - name: location
       - name: designation
