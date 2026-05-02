@@ -4,12 +4,21 @@ models:
       - name: salary
         tests:
           - not_null
-
       - name: emp_id
         tests:
           - not_null
           - unique
-
+      - name: dept_id
+        tests:
+          - accepted_values:
+              arguments:
+                values: [10, 20, 30]
+  - name: department_raw
+    columns:
+      - name: dept_id
+        tests:
+          - not_null
+          - unique
       - name: dept_id
         tests:
           - accepted_values:
