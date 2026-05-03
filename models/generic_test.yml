@@ -18,12 +18,8 @@ models:
               arguments:
                 values: [10, 20, 30]
   - name: employee_department_location
-    description: checking the dimension count v/s base table count
-    columns:
-      - name: salary
-        description: employee salary should not be null
-        tests:
-          - dbt_utils.equal_rowcount:
-              arguments:
-                compare_model: ref('employee_raw')
+    tests:
+      - dbt_utils.equal_rowcount:
+          arguments:
+            compare_model: ref('employee_raw')
 
