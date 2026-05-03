@@ -4,15 +4,21 @@ sources:
     schema: payroll_raw
     tables:
       - name: employee
+        description: this is employee table from raw layer
         columns:
           - name: emp_id
+            description: checking employee id should be unique and not null
             tests:
             - not_null
             - unique
       - name: department
+        description: department table from raw layer
         columns:
           - name: dept_id
+            description: the department id should not null
             tests:
             - not_null
       - name: location
+        description: location from raw layer
       - name: designation
+        description: designation table from raw layer
