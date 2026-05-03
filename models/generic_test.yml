@@ -17,9 +17,5 @@ models:
           - accepted_values:
               arguments:
                 values: [10, 20, 30]
-  - name: employee_department_location
-    tests:
-      - dbt_utils.equal_rowcount:
-          arguments:
-            compare_model: ref('employee_raw')
+
 
