@@ -1,10 +1,4 @@
 
-{{
-    config(
-        schema='Data_Mart'
-    )
-}}
-
 select a.*,
 b.dept_name
 from {{ ref('employee_stg') }} a
