@@ -34,3 +34,6 @@ models:
     payroll:
       +materialized: table
       +transient: true
+    finance:
+      +materialized: table
+      +transient: true
