@@ -1,6 +1,6 @@
 sources:
   - name: finance_base
-    database: PROD
+    database: PRACTICE
     schema: PAYROLL_RAW
     tables:
       - name: employee
