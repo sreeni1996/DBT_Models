@@ -1,18 +1,14 @@
 models:
   - name: employee_raw
-    description: employee base table snapshot model testing
     columns:
       - name: salary
-        description: employee salary should not be null
         tests:
           - not_null
       - name: emp_id
-        description: employee id is unique and it should not be null
         tests:
           - not_null
           - unique
       - name: dept_id
-        description: only 10,20,30,40 these departments are accepted for the dept_id
         tests:
           - accepted_values:
               arguments:
