@@ -18,6 +18,14 @@ models:
 
   - name: employee_dimension
     tests:
+    
       - dbt_utils.equal_rowcount:
           arguments:
             compare_model: ref('employee_stg')
+
+      - dbt_utils.equality:
+          arguments:
+            compare_model: ref('employee_stg')
+            compare_columns: 
+              - emp_id
+              - salary
