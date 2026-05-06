@@ -1,18 +1,18 @@
 sources:
-  - name: payroll
-    database: practice
-    schema: payroll_raw
+  - name: finance_base
+    database: PROD
+    schema: PAYROLL_RAW
     tables:
       - name: employee
         columns:
           - name: emp_id
             tests:
-            - not_null
-            - unique
+              - unique
+              - not_null
       - name: department
         columns:
           - name: dept_id
             tests:
-            - not_null
-      - name: location
-      - name: designation
+              - not_null
+              
+
