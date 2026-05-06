@@ -1,0 +1,8 @@
+
+version: 2
+
+models:
+  - name: employee_stg
+    tests:
+      - dbt_utils.equal_rowcount:
+          compare_model: source('finance_base', 'employee')
