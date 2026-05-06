@@ -7,6 +7,8 @@ models:
       - dbt_utils.equal_rowcount:
           arguments:
             compare_model: source('finance_base', 'employee')
+            compare_model_filters: "emp_id<=5 and salary>75000"
+            model_filters: "emp_id<=5 and salary>75000"
 
   - name: department_stg
     tests:
