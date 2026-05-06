@@ -1,8 +1,8 @@
-
 version: 2
 
 models:
-  - name: employee_stg
+  - name: your_model_name
     tests:
       - dbt_utils.equal_rowcount:
-          compare_model: source('finance_base', 'employee')
+          arguments:
+            compare_model: source('your_source_name', 'your_source_table')
