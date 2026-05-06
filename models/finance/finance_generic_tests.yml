@@ -6,3 +6,8 @@ models:
       - dbt_utils.equal_row_count:
           arguments:
             compare_model: "{{ source('finance_base', 'employee') }}"
+  - name: department_stg
+    tests:
+      - dbt_utils.equal_row_count:
+          arguments:
+            compare_model: "{{ source('finance_base', 'department') }}"
