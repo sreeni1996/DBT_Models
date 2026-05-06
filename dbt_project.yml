@@ -37,4 +37,7 @@ models:
     finance:
       +materialized: table
       +transient: true
+    mart:
       +schema: Data_Mart
+      +materialized: table
+      +transient: true
