@@ -1,8 +1,21 @@
 version: 2
 
 models:
+
   - name: employee_stg
     tests:
       - dbt_utils.equal_rowcount:
           arguments:
             compare_model: source('finance_base', 'employee')
+
+  - name: department_stg
+    tests:
+      - dbt_utils.equal_rowcount:
+          arguments:
+            compare_model: source('finance_base', 'department')
+
+  - name: employee_dimension
+    tests:
+      - dbt_utils.equal_rowcount:
+          arguments:
+            compare_model: ref('employee_stg')
