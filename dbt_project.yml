@@ -38,6 +38,7 @@ models:
       +materialized: table
       +transient: true
     MART:
+      +database: PROD
       +schema: Data_Mart
       +materialized: table
       +transient: true
